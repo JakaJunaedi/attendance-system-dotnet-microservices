@@ -1,0 +1,25 @@
+@AuthService_HostAddress = http://localhost:5207
+
+POST {{AuthService_HostAddress}}/api/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "superadmin@company.com",
+  "password": "Admin@123"
+}
+
+### Register a new user
+POST {{AuthService_HostAddress}}/api/auth/register
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNWMzZThlNi05ZTkzLTQzN2EtOGYwNy01OTEyYzQ4MzJmM2IiLCJlbWFpbCI6InN1cGVyYWRtaW5AY29tcGFueS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJTdXBlckFkbWluIiwiZnVsbE5hbWUiOiJTdXBlciBBZG1pbmlzdHJhdG9yIiwiZGVwYXJ0bWVudCI6IklUIiwianRpIjoiOTcwYWFkZjctYTFjMy00MzY4LWEwYzEtZDUxNGViNjVkOWMyIiwiZXhwIjoxNzc2NTQ0MDM2LCJpc3MiOiJBdXRoU2VydmljZSIsImF1ZCI6IkF1dGhTZXJ2aWNlQ2xpZW50In0.zZRfC2Bevlh2g9JLfziODVcWyIkE8P7aFNfbsTJbAaw
+
+{
+  "username": "tes",
+  "email": "tes@gmail.com",
+  "password": "123456",
+  "fullName": "tes",
+  "department": "IT",
+  "role": "Employee"
+}
